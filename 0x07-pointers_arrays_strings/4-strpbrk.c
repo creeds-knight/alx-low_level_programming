@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _strpork - Entry point
+ * _strpbrk - Entry point
  * @s: input
  * @accept: input
  * Return: 0
  */
-char *_strpork(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int k;
 
