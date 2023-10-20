@@ -6,8 +6,8 @@
 
 /**
  * struct node - A structure that holds data for a node
- * @word: A string of characters
- * @lenof: Length of the string
+ * @str: A string of characters
+ * @len: Length of the string
  * @next: The address of the next node
  * Description: This is a node that contains strin, string length and pointer
  */
