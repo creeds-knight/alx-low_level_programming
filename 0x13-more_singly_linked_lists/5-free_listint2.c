@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint2 - Frees a lists and returns 
+ * free_listint2 - Frees a lists and returns
  * @head: The pointer to the first element
  */
 
