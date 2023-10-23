@@ -9,7 +9,9 @@ void free_listint(listint_t *head)
 {
 	listint_t *temp;
 
-	if (head != NULL)
+	if (head == NULL)
+		return;
+	else if (head != NULL)
 	{
 		temp = head;
 		head = head->next;
