@@ -7,9 +7,10 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsignedlong int idx = key_index((const unsigned char *)key, ht->size);
-	hash_node_t *tmp = ht->array[idx];
+	unsigned long int idx = key_index((const unsigned char *)key, ht->size);
+	hash_node_t *tmp;
 
+	tmp = ht->array[idx];
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (NULL);
 	while (tmp != NULL)
