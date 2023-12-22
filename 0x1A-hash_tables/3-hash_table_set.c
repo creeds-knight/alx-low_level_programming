@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- * A hash_table_set - A function to add an element to the hash table
+ * hash_table_set - A function to add an element to the hash table
  * @ht: The hash Table
  * @key: key value to be used
  * @value: Value to be used
@@ -14,8 +14,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (0);
-
-	/* CHecking if node exists and updating the current key*/
 	current = ht->array[idx];
 	while (current != NULL)
 	{
@@ -25,11 +23,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			current->value = strdup(value);
 			if (current->value == NULL)
 				return (0);
-			return 1; /** key updated*/
+			return (1); /** key updated*/
 		}
 		current = current->next;
 	}
-	/** key doesn't exist create a new noode*/
 	newnode = malloc(sizeof(hash_node_t));
 	if (newnode == NULL)
 		return (0);
