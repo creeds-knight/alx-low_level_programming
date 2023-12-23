@@ -1,4 +1,9 @@
 #include "hash_tables.h"
+/**
+ * free_node_list - A function to free the node
+ * @head: A pointer to the first element of the list
+ * Return: NOne
+ */
 void free_node_list(hash_node_t *head)
 {
 	hash_node_t *tmp = head;
