@@ -7,3 +7,5 @@ SRC = $(wildcard *.c)
 school:
 	${CC} ${SRC} -o school
 
+clean:
+	rm -r $(SRC)
