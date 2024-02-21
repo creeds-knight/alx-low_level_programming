@@ -1,11 +1,9 @@
 all: executable
 
-CC = gcc
+CC := gcc
 
 SRC := $(wildcard *.c)
 
 executable:
-	CC -c main.c school.c -o school
+	$(CC) $(SRC) -o school
 
-clean:
-	rm -r SRC
