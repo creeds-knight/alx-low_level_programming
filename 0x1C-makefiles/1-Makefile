@@ -1,9 +1,9 @@
-all: executable
+all: school
 
-CC := gcc
+CC = gcc
 
-SRC := $(wildcard *.c)
+SRC = $(wildcard *.c)
 
-executable:
-	$(CC) $(SRC) -o school
+school:
+	${CC} ${SRC} -o school
 
