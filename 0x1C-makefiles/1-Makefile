@@ -1,0 +1,9 @@
+all: executable
+
+CC = gcc
+SRC := $(*.c)
+executable:
+	CC -c main.c school.c -o school
+
+clean:
+	rm -r SRC
